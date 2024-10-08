@@ -1,0 +1,100 @@
+/* Full-screen layout for the job list */
+.job-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header section for recruiter information */
+.job-list-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-list-header h4 {
+  font-size: 1.8rem;
+  color: #1565c0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styling the job table */
+.job-list-table {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #1976d2;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #e3f2fd;
+}
+
+table tr:hover {
+  background-color: #bbdefb;
+}
+
+/* Button styles */
+.btn-close-job {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-close-job:hover {
+  background-color: #f4511e;
+}
+
+.btn-view-applications {
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-view-applications:hover {
+  background-color: #1e88e5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

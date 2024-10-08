@@ -1,0 +1,144 @@
+/* Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  animation: fadeIn 1s ease-in-out;
+  padding: 20px; /* Added padding to reduce overall container size */
+}
+
+.login-form {
+  background: white;
+  padding: 40px; /* Increased padding for a more spacious feel */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Increased max-width for a larger form */
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form:hover {
+  transform: scale(1.02);
+}
+
+.form-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Reduced spacing between form groups */
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-right: 15px;
+  width: 25%; /* Adjusted label width for better alignment */
+  text-align: right;
+}
+
+.form-group input,
+.form-group select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  transition: border-color 0.3s ease;
+  width: 200%; /* Adjusted input width for better form alignment */
+  max-width: 500px; /* Increased input field width */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #7dcba6;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(125, 201, 178, 0.25);
+}
+
+.invalid-feedback {
+  font-size: 0.875em;
+  color: #dc3545;
+  margin-top: 5px;
+  width: 70%; /* Align feedback with input */
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 8px 16px; /* Reduced button padding */
+  font-size: 0.875em; /* Reduced button font size */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px; /* Reduced top margin for buttons */
+  margin-right: 10px; /* Spacing between buttons */
+}
+
+.btn-success {
+  background-color: #7dcba6;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #6ab58f;
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+  transform: translateY(-2px);
+}
+
+.form-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-password-link {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.signup-prompt {
+  font-size: 0.875em;
+}
+
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

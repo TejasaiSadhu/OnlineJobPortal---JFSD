@@ -1,0 +1,9 @@
+/* App.css */
+
+/* Remove old Bootstrap navbar styles if necessary */
+
+/* Add new styles if needed for ResponsiveAppBar */
+/* For example: */
+.MuiAppBar-root {
+  background-color: #333; /* Or any color you choose */
+}

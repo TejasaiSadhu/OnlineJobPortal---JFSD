@@ -1,0 +1,58 @@
+/* Full-screen container */
+.job-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Job title styling */
+.job-title {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Job card styling */
+.job-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for job card */
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Loading and error state styling */
+.loading, .error {
+  font-size: 1.5rem;
+  color: #ff5252;
+}
+
+/* No job found message styling */
+.no-job {
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

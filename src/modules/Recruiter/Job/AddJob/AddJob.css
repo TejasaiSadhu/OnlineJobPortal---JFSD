@@ -1,0 +1,92 @@
+/* Container takes full screen */
+.add-job-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f1f3f6, #e3e9f1);
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Center form and add some box-shadow */
+.job-form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* On hover, add a slight scale effect */
+.job-form-container:hover {
+  transform: scale(1.02);
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #5845d3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

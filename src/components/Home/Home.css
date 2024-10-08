@@ -1,0 +1,103 @@
+/* Ensure the carousel controls are centered */
+.carousel-control-prev, .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#top-recruiters h4 {
+  font-size: 3rem; /* Increase font size to 3rem */
+  font-weight: bold;
+  color: #1d1f21; /* Dark gray for a professional look */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the topRecruiters section */
+#topRecruiters {
+  display: flex;
+  overflow: hidden; /* Hide overflow to prevent horizontal scroll */
+  justify-content: center; /* Center horizontally */
+}
+
+#topRecruiters .carousel-inner {
+  display: flex; /* Flexbox layout to arrange items horizontally */
+}
+
+#topRecruiters .carousel-item {
+  flex: 0 0 auto; /* Prevent items from shrinking and ensure they stay horizontal */
+  width: auto; /* Adjust as needed */
+}
+
+#topRecruiters img {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover;
+  margin: 0 10px; /* Space between images */
+}
+
+/* Style for testimonials section */
+#testimonials {
+  margin-top: 20px; /* Add margin-top for spacing */
+}
+
+#testimonials h4 {
+  font-weight: bold;
+  color: #090b0c; /* Dark gray for a professional look */
+  font-size: 3rem;
+}
+
+/* Card styles */
+.card {
+  width: 100%; /* Full width within column */
+  max-width: 300px; /* Maximum width for the card */
+  margin: 0 auto; /* Center the card */
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  display: flex;
+  flex-direction: column; /* Ensure content is stacked vertically */
+  align-items: center; /* Center align horizontally */
+  text-align: center; /* Center align text */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Card image styles */
+.card-img {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Set a fixed height */
+  border-radius: 50%; /* Circular profile images */
+  object-fit: cover; /* Ensure images cover the area */
+  margin-top:50px;
+}
+
+/* Grid layout for testimonials */
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center horizontally */
+}
+
+.testimonial-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with space between */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .carousel-item img {
+    width: 100%; /* Ensure images fit the container on small screens */
+  }
+  
+  .card {
+    margin: 0 auto; /* Center the card on small screens */
+    max-width: 100%; /* Full width on small screens */
+  }
+  
+  .testimonial-card {
+    flex: 1 1 100%; /* Stack cards vertically on small screens */
+  }
+}

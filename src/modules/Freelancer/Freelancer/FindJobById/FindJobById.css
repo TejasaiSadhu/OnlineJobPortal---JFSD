@@ -1,0 +1,100 @@
+.job-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.table td {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.table-primary {
+  border: 1px solid #007bff;
+}
+
+.table-warning {
+  border: 1px solid #ffc107;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.skills-table th {
+  background-color: #ffc107;
+}
+
+.skills-table td {
+  background-color: #fff3cd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-job-message {
+  font-size: 1.2rem;
+  color: #dc3545;
+}

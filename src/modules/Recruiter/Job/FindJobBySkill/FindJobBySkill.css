@@ -1,0 +1,78 @@
+/* Full-screen container with a professional background */
+.job-skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Styling the job card */
+.job-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Hover effect for job card */
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill heading styling */
+.skill-heading {
+  font-size: 1.8rem;
+  color: #00796b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.job-table th,
+.job-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.job-table th {
+  background-color: #00796b;
+  color: white;
+}
+
+.job-table tr:nth-child(even) {
+  background-color: #e0f2f1;
+}
+
+.job-table tr:hover {
+  background-color: #b2dfdb;
+}
+
+/* Loading and error state styling */
+.loading, .error {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

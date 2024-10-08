@@ -1,0 +1,132 @@
+/* Freelancers.css */
+
+.freelancers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e9ecef; /* Light background color for the page */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px; /* Adjusted position from the top */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other content */
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #fff;
+}
+
+.freelancers-card {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 80px; /* Added margin to create space between the button and the card */
+}
+
+.freelancers-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: #f1f3f5; /* Light grey on hover */
+}
+
+.freelancers-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+  background-color: #343a40; /* Dark grey background */
+  color: #f8f9fa; /* Light grey text color */
+}
+
+.freelancers-body {
+  padding: 20px;
+  overflow-x: auto; /* Allows horizontal scrolling if table overflows */
+}
+
+.freelancers-table {
+  width: 100%;
+  border-collapse: collapse;
+  transition: all 0.3s ease;
+}
+
+.freelancers-table th,
+.freelancers-table td {
+  border: 1px solid #dee2e6; /* Light grey border for cells */
+  padding: 12px;
+  text-align: center;
+  background-color: #ffffff; /* White background for cells */
+  color: #495057; /* Dark grey text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.freelancers-table th {
+  background-color: #007bff; /* Blue background for headers */
+  color: #ffffff; /* White text color */
+}
+
+.freelancers-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Light grey for alternating rows */
+  transition: background-color 0.3s ease;
+}
+
+.freelancers-table tbody tr:hover {
+  background-color: #e2e6ea; /* Slightly darker grey on row hover */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.freelancers-table tbody tr.active-row {
+  background-color: #d3d9db; /* Light grey-green for active row */
+  transform: scale(1.02);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation for adding/removing row highlights */
+@keyframes highlight-row {
+  from {
+    background-color: #d3d9db;
+    transform: scale(1.02);
+  }
+  to {
+    background-color: #ffffff;
+    transform: scale(1);
+  }
+}
+
+.freelancers-table tbody tr.highlighted {
+  animation: highlight-row 0.5s forwards;
+}
+
+.freelancers-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.freelancers-footer .btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.freelancers-footer .btn:hover {
+  background-color: #dc3545; /* Danger color */
+  color: #fff;
+}

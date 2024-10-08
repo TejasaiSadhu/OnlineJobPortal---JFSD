@@ -1,0 +1,101 @@
+/* src/Freelancer/BookmarkJob/BookmarkJob.css */
+
+.freelancer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Needed for positioning the back button */
+}
+
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+.freelancer-row {
+  display: flex;
+  justify-content: center; /* Align cards horizontally in the center */
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping of cards if needed */
+}
+
+.freelancer-card {
+  flex: 1 0 300px; /* Allow cards to grow and shrink, with a minimum width */
+  max-width: 300px; /* Prevent cards from exceeding this width */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.freelancer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.freelancer-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.freelancer-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.freelancer-card-body button {
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-outline-warning {
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
